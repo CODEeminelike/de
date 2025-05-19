@@ -27,7 +27,7 @@
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://mysql-d7b0862-monnkkey2004-4d92.g.aivencloud.com:16703/defaultdb?ssl-mode=REQUIRED"/>
             <property name="jakarta.persistence.jdbc.user" value="avnadmin"/>
-<!--            <property name="jakarta.persistence.jdbc.password" value="AVNS_S_kdk4tGJKb8m9Qm4hU"/>-->
+            <property name="jakarta.persistence.jdbc.password" value="AVNS_S_kdk4tGJKb8m9Qm4hU"/>
             <property name="eclipselink.ddl-generation" value="create-tables"/>
             <property name="eclipselink.logging.level" value="FINE"/>
         </properties>
