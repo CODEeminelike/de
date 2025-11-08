@@ -24,12 +24,20 @@
         <class>Model.Users</class>
         <class>Model.PasswordResetToken</class>
         <properties>
+            <!-- TiDB Cloud Connection -->
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://mysql-d7b0862-monnkkey2004-4d92.g.aivencloud.com:16703/defaultdb?ssl-mode=REQUIRED"/>
-            <property name="jakarta.persistence.jdbc.user" value="avnadmin"/>
-            <property name="jakarta.persistence.jdbc.password" value="AVNS_S_kdk4tGJKb8m9Qm4hU"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://gstwww.01up-routheast-tprod.amutbbeloud.com:4000/mydb?useSSL=true&amp;requireSSL=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.3&amp;verifyServerCertificate=false"/>
+            <property name="jakarta.persistence.jdbc.user" value="3f26XUddLENvTYwroot"/>
+            <property name="jakarta.persistence.jdbc.password" value="ULu2fkOr4MPPydtt"/>
+            
+            <!-- JPA Properties -->
             <property name="eclipselink.ddl-generation" value="create-tables"/>
             <property name="eclipselink.logging.level" value="FINE"/>
+            
+            <!-- Connection Pool Settings -->
+            <property name="eclipselink.connection-pool.default.initial" value="1"/>
+            <property name="eclipselink.connection-pool.default.min" value="1"/>
+            <property name="eclipselink.connection-pool.default.max" value="5"/>
         </properties>
     </persistence-unit>
 </persistence>
